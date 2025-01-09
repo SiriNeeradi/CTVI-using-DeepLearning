@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Flow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="email-screen" class="login-container">
+        <div class="header">
+            <h2>Sign in</h2>
+            <p>Use your Google Account</p>
+        </div>
+        <form id="email-form">
+            <div class="input-group">
+                <input type="email" id="email-input" name="email" placeholder="Email or phone" required>
+                <span class="error-message">Enter an email or phone number</span>
+            </div>
+            <a href="#" class="forgot-link">Forgot email?</a>
+            <p class="guest-mode">Not your computer? Use Guest mode to sign in privately. <a href="#">Learn more</a></p>
+            <div class="actions">
+                <a href="#" class="create-account">Create account</a>
+                <button type="button" id="next-to-password" class="next-button">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="password-screen" class="login-container hidden">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="logo">
+            <h2>Welcome</h2>
+            <div class="email-display">
+                <span class="email-icon">&#x1F464;</span>
+                <span id="display-email" class="email-text">example@gmail.com</span>
+                <span class="email-dropdown">&#x25BE;</span>
+            </div>
+        </div>
+        <form id="password-form">
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="show-password">
+                <label for="show-password">Show password</label>
+            </div>
+            <a href="#" class="forgot-link">Forgot password?</a>
+            <div class="actions">
+                <button type="submit" class="next-button">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="new_account.js"></script>
+</body>
+</html>
